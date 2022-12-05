@@ -1,0 +1,478 @@
+@font-face {
+    font-family: Newyork;
+    src: url(font/Newyork.otf);
+}
+
+@font-face {
+    font-family: LouisGeorgeCafe;
+    src: url(font/LouisGeorgeCafe.ttf);
+}
+
+body {
+    margin: 0 ;
+    width: 100%;
+}
+
+
+/*nav bar*/
+
+nav {
+    z-index: 2;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color:#FFFEFD;
+    height: 7.5vh;
+    align-items: center;
+    display: flex ;
+    border-bottom: 1.5px solid black;
+    justify-content: space-between;
+    padding: 0 100px;
+    font-weight: 500;}
+
+.navtext {
+    font-family: Newyork ;
+    font-size: 1.7em;}
+
+.navigasi {
+    display: flex;
+    font-family: LouisGeorgeCafe ;
+    font-size: 0.9em;}
+
+a { 
+    color: black;
+    text-decoration: none;}
+
+.navigasi a {
+    padding: 4px 12px;
+    margin-left: 100px;}
+
+
+.BG_Back{
+    position: absolute;
+    z-index: -1;
+}
+
+
+/** HEADER **/
+
+header{
+    height: 100vh;
+}
+
+.HeaderText {
+    margin-left: 930px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 150px;
+    display: flex;
+}
+
+.TitleHeader h1 {
+    color: white;
+    font-size: 3.8rem;
+    font-family: Newyork;
+    font-weight: normal;
+}
+
+.TitleHeader p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.35em;
+    font-family: LouisGeorgeCafe;
+    font-style: italic;
+}
+
+.ButtonHeader {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    font-family: LouisGeorgeCafe;
+    font-size: 1.1em;
+    padding: 9px 36px;
+    margin: 80px 113px;
+    transition-duration: 0.4s;
+}
+
+.ButtonHeader:hover {
+    background-color: #EEE0D9;
+}
+
+/** PORTFOLIO PAGE **/
+
+.Page01 {
+    position: relative;
+    background-color: #F2E9E4;
+    height: 100vh;
+    width: 100%;
+} 
+
+.Img_PG01{
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.PG0101{
+    background-image: url("Images/Modelling.png");
+}
+.PG0102{
+    height: 67vh;
+    background-size: 294px;
+    background-image: url("Images/Photography.png");
+}
+.PG0103{
+    background-image: url("Images/Design.png");
+}
+
+.PG0101, .PG0102, .PG0103{
+    background-position: center;
+}
+.PG0101, .PG0102, .PG0103, .Img_PG02, .Arrow_PG02, .Hearticon, .FooterIMG_PG04{
+background-repeat: no-repeat;
+}
+
+.PG0101, .PG0103{
+    height: 55vh;
+    background-size: 281px ;
+}
+
+.IMG01_PG01, .IMG02_PG01, .IMG03_PG01 {
+    padding: 0px 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.IMG01_PG01, .IMG03_PG01 {
+    width: 299px;
+}
+
+.IMG02_PG01 {
+    width: 320px;
+}
+
+.Text_PG01{
+    font-family: Newyork;
+    display: flex;
+    justify-content: center;
+    font-size: 7.5em;
+    padding-top: 154px;
+    color: white;
+    text-shadow: #D5CECB;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.IMG01_PG01 a, .IMG02_PG01  a, .IMG03_PG01 a {
+    margin-top: 45px;
+    font-family: LouisGeorgeCafe;
+    display: flex;
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    padding: 9px 23px;
+    width: 50%;
+    justify-content: center;
+    font-size: 1.1em;
+    align-self: center;
+    transition-duration: 0.4s;
+}
+
+.IMG01_PG01 a:hover, .IMG02_PG01  a:hover, .IMG03_PG01 a:hover {
+    background-color: #EEE0D9;
+}
+
+/*ABOUT ME TAB*/
+
+.Page02{
+    background-color: #FFFEFD;
+    width: 100%;
+    height: 102vh;
+}
+
+.Img_PG02{
+    background-image: url("Images/Aboutme.png");
+    height: 52vh;
+    width: 20.4%;
+    background-size: 311px;
+    outline: 1.7px solid black;
+    outline-offset: 10px;
+    border-radius: 44px;
+}
+
+.Title_PG02 {
+    font-family: Newyork;
+    font-size: 3.5em;
+    padding: 65px 0px 12px 0px;
+}
+
+.Text_PG02 {
+    font-size: 1.2em;
+    font-family: LouisGeorgeCafe;
+}
+
+.Title_PG02, .Text_PG02 {
+    display: flex;
+    justify-content: center;
+}
+
+.Content_02PG02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 58px;
+}
+
+.Detail_PG02{
+    padding-left: 80px;
+}
+.Detail_PG02 h1{
+    font-family: Newyork;
+    font-weight: normal;
+    font-size: 3.2em;
+    margin: 10px 0px 30px 0px;
+}
+
+.Detail_PG02 p{
+    font-family: LouisGeorgeCafe;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.ArrowText_PG02{
+    font-size: 1.2em;
+    padding-bottom: 8px;
+    font-family: LouisGeorgeCafe;
+}
+
+.Arrow_PG02{
+    width: 2.8%;
+    background-size: 41px;
+    height: 6vh;
+    background-image: url("Images/arrow.png");
+}
+
+.Scroll_PG02{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*page3*/
+
+.Page03 {
+    height: 105vh;
+    background-color: #F2E9E4;
+}
+.Text_PG03{
+    padding-top: 34px;
+}
+.Text_PG03 p{
+    font-family: Newyork;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+.Text_PG03 li {
+    font-family: LouisGeorgeCafe;
+    font-size: 1.4em;
+    line-height: 1.3;
+}
+
+/*content*/
+
+.Section_01PG03, .Section_02PG03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.Section_02PG03{ 
+    margin-top: 110px;
+}
+.Education, .work_experience, .Skills, .Software {
+    outline: 1.5px solid black;
+    outline-offset: 30px;
+    border-radius: 18px;
+    width: 25%;
+}
+
+.work_experience, .Software {
+    margin-left: 260px;
+}
+
+.Education p, .work_experience p, .Skills p {
+    padding-bottom: 10px;
+}
+
+.Software p{
+    padding-bottom: 13px;
+}
+
+/*software*/
+
+.AI_Logo, .PS_Logo, .MAYA_Logo, .PR_Logo, .LR_Logo, .XD_Logo {
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    padding-bottom: 15px;
+    background-repeat: no-repeat;
+    margin: 0px 20px;
+}
+
+.AI_PB, .PR_PB,.PS_PB,.LR_PB,.XD_PB,.MAYA_PB{
+    height: 10px;
+    background-size: 50px;
+    background-repeat: no-repeat; 
+    padding-bottom: 10px;
+    margin: 0px 20px;
+}
+
+.AI_Logo{
+    background-image: url("Images/AI.png");
+}
+
+.AI_PB{
+    background-image: url("Images/PB-AI.png"); 
+}
+.PS_Logo{
+    background-image: url("Images/Photoshop.png");
+}
+
+.PS_PB{
+    background-image: url("Images/PB-PS.png");
+}
+
+.MAYA_Logo{
+    background-image: url("Images/Maya.png");
+}
+
+.MAYA_PB{
+    background-image: url("Images/PB-MAYA.png");
+}
+
+.PR_Logo{
+    background-image: url("Images/Premiere\ Pro.png");
+}
+
+.PR_PB{
+    background-image: url("Images/PB-PR.png");
+}
+
+.XD_Logo{
+    background-image: url("Images/Xd.png");
+}
+
+.XD_PB{
+    background-image: url("Images/PB-XD.png");
+}
+
+.LR_Logo{
+    background-image: url("Images/Lightroom.png");
+}
+
+.LR_PB{
+    background-image: url("Images/PB-LR.png");
+}
+
+.Software-div{
+    display: flex;
+}
+
+.Software-div{
+    justify-content: space-evenly;
+}
+
+.Page04 {
+    height: 150vh;
+    width :100%;
+}
+
+.Title_PG04 {
+    font-family: Newyork;
+    padding: 96px 0px 35px 0px;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Detail_PG04{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.Text_PG04 {
+    font-family: LouisGeorgeCafe;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.4;  
+}
+
+.Scroll_PG04{
+    padding: 90px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    border-top: 2px solid black;
+}
+
+.Insta, .Behance, .NoHP ,.Gmail{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.Insta a img, .Gmail a img , .Behance a img, .NoHP a img{
+    width: 31px;
+    padding-right: 14px;
+}
+
+.Detail_PG0402{
+    font-family: LouisGeorgeCafe;
+    font-size: 1em;
+}
+
+.TitleFooter_PG04 {
+    font-family: Newyork;
+    padding-top: 96px;
+    font-size: 3.5em;
+}
+
+.TitleFooter_PG04 p, .Title_PG04 p  {
+    margin: 0;}
+
+.Footer_PG04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Hearticon{
+    background-image: url("Images/Heart.png");
+    height: 25px;
+    width: 25px;
+    background-size: 25px;
+}
+
+.FooterIMG_PG04{
+    background-image: url("Images/footer.png");
+    height: 191px;
+    width: 100%;
+    background-size: 1536px;
+    margin-top: 75px;
+    border-top: 2px solid black;
+}
+

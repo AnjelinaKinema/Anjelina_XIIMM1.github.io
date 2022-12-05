@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Newyork;
+    src: url(../font/Newyork.otf);
+}
+
+@font-face {
+    font-family: LouisGeorgeCafe;
+    src: url(../font/LouisGeorgeCafe.ttf);
+}
+
+body{
+    background-color: rgb(242, 233,228);
+  }
+
+
+nav {
+    z-index: 2;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color:#FFFEFD;
+    height: 7.5vh;
+    align-items: center;
+    display: flex ;
+    border-bottom: 1.5px solid black;
+    justify-content: space-between;
+    padding: 0 100px;
+    font-weight: 500;}
+
+.navtext {
+    font-family: Newyork ;
+    font-size: 1.7em;}
+
+.navigasi {
+    display: flex;
+    font-family: LouisGeorgeCafe ;
+    font-size: 0.9em;}
+
+a { 
+    color: black;
+    text-decoration: none;}
+
+.navigasi a {
+    padding: 4px 12px;
+    margin-left: 100px;}
+
+.big-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 0 0px;
+}
+    
+.wrapper{
+    max-width: 1600px;
+    position: relative;
+    padding-top: 100px;
+}
+    
+.wrapper .carousel{
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+    
+.carousel img{
+    height: 450px;
+    object-fit: cover;
+    width: calc(300% / 3);
+    margin-left: 5px;
+}
+    
+.carousel img:first-child{
+    margin-left: 0px;
+}
+    
+.arrow{
+    position: absolute;
+    top: 55%;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+    
+.arrow:first-child{
+    left: 410px;
+    transform: rotate(180deg);
+}
+    
+.arrow:last-child{
+    right: 410px;
+    transform: rotate(360deg);
+}
+
+.next-section{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    font-family: NewYork;
+    font-size: 2.3em;
+    padding-bottom: 12px;
+}
+
+.Caption {
+    text-align: center;
+    font-family: LouisGeorgeCafe;
+    font-size: 1.3rem;
+}
